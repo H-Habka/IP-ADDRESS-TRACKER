@@ -1,0 +1,122 @@
+.header{
+    background: url('../../images/pattern-bg.png');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    .title{
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .input-filed-container{
+        display: flex; 
+        border-radius: 0.8rem; 
+        margin-top: 1.7rem; 
+        width:100%; 
+        margin-bottom: 140px;
+        max-width: 550px;
+
+
+
+        @media screen and (min-width:800px){
+            &{
+                margin-bottom: 60px;
+            }
+        }
+
+        .input-filed{
+            padding: 10px;
+            font-size: 18px;
+            width: 100%;
+            border-radius: 0.8rem 0 0 0.8rem; 
+            border: none;
+
+            &:active{
+                border:none;
+            }
+            &:focus{
+                outline: none;
+            }
+            
+        }
+
+        .submit-button{
+            padding: 16px 18px;
+            background: black;
+            border-radius:  0 0.8rem  0.8rem 0; 
+
+
+            &:active{
+                background: hsl(0, 0%, 17%);
+            }
+        }
+    }
+
+    .detail-container{
+        border-radius: 0.8rem; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        width: 85%;
+        bottom: 0;
+        transform: translate(0, 50%);
+        background-color: #fff;
+        padding: 10px 0;
+        max-width: 1500px;
+        @media screen and (min-width:800px){
+            &{
+                flex-direction: row;
+                justify-content: center;
+                width:auto;
+                padding: 20px;
+                margin-inline:10px;
+
+                .detalis{
+                    margin-right: 55px;
+                    margin-bottom: 10px;
+                    border-left: 1px solid hsl(0, 0%, 90%);
+
+                }
+                .detalis:nth-of-type(1){
+                    border-left:none;
+                }
+            }
+        }
+
+
+        .detalis{
+            padding: 10px;
+
+            .details-title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.7rem;
+                color: hsl(0, 0%, 59%);
+                padding:0.1rem;
+                margin: 0.3rem;
+                font-weight: 400;
+            }
+
+            .details-content{
+                color: hsl(0, 0%, 17%);
+                font-weight: 500;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.mapContainer{
+    background-color: #ddd;
+    width: 100%;
+    height: 70vh;
+}
